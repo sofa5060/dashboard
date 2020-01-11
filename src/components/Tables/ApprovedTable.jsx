@@ -1,9 +1,7 @@
-import React from 'react'
+import React,{useContext} from "react";
+import {LayoutContext} from "../contexts/LayoutContext"
 
 export default function ApprovedTable() {
-    return (
-        <div>
-            Approved
-        </div>
-    )
+  const {layoutPage} = useContext(LayoutContext)
+  return <div className={layoutPage.homePage ? "approved-page move-down2":"approved-page move-up2"}>hello</div>;
 }

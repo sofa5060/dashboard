@@ -1,9 +1,7 @@
-import React from 'react'
+import React,{useContext} from "react";
+import { LayoutContext } from "../contexts/LayoutContext";
 
 export default function HomeTable() {
-    return (
-        <div>
-            Home
-        </div>
-    )
+  const {layoutPage} = useContext(LayoutContext)
+  return <div className={layoutPage.homePage ? "home-page move-down":"home-page move-up"}>home</div>;
 }
