@@ -6,9 +6,7 @@ import AddCircleIcon from "@material-ui/icons/AddCircle";
 import "./Dashboard.css";
 
 export default function Dashboard() {
-  const { layoutPage, showHomePage, showApprovedSitesPage } = useContext(
-    LayoutContext
-  );
+  const { showHomePage, showApprovedSitesPage } = useContext(LayoutContext);
 
   return (
     <div className="home-screen">

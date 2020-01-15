@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 
 export const LayoutContext = createContext();
 
-const AuthContextProvider = props => {
+const LayoutContextProvider = props => {
   const [layoutPage, setlayoutPage] = useState({
     homePage: true,
     approvedPage: false
@@ -29,4 +29,4 @@ const AuthContextProvider = props => {
   );
 };
 
-export default AuthContextProvider;
+export default LayoutContextProvider;
